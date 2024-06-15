@@ -1,6 +1,6 @@
 package com.example.practice_rabbitmq;
 
-import messaging.Receiver;
+
 import org.springframework.amqp.core.Binding;
 import org.springframework.amqp.core.BindingBuilder;
 import org.springframework.amqp.core.Queue;

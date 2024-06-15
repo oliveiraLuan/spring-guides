@@ -1,4 +1,4 @@
-package messaging;
+package com.example.practice_rabbitmq;
 
 import org.springframework.stereotype.Component;
 
