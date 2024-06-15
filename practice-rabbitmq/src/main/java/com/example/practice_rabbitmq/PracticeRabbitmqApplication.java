@@ -15,7 +15,7 @@ import org.springframework.context.annotation.Bean;
 @SpringBootApplication
 public class PracticeRabbitmqApplication {
 
-	static final String topicExchangingName = "spring-boot-exchange";
+	public static final String topicExchangingName = "spring-boot-exchange";
 
 	static final String queueName = "spring-boot";
 
@@ -48,8 +48,8 @@ public class PracticeRabbitmqApplication {
 		return new MessageListenerAdapter(receiver, "receiveMessage");
 	}
 
-	public static void main(String[] args) {
-		SpringApplication.run(PracticeRabbitmqApplication.class, args);
+	public static void main(String[] args) throws InterruptedException {
+		SpringApplication.run(PracticeRabbitmqApplication.class, args).close();
 	}
 
 }
